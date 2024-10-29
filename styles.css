@@ -1,0 +1,215 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo {
+    display: inline-block;
+}
+
+.sorriso {
+    color: #FFB300; /* Segunda cor */
+}
+
+.menu-toggle {
+    display: none; /* Escondido por padrão */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFB300; /* Cor do hover */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.foto-dentista {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.servicos-container, .equipe-container, .blog-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card, .equipe-card, .blog-post {
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(45% - 20px); /* Alinhamento responsivo */
+    transition: transform 0.3s;
+}
+
+.card:hover, .equipe-card:hover, .blog-post:hover {
+    transform: scale(1.05);
+}
+
+
+
+.comentario {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-style: italic;
+    text-align: center;
+}
+
+.comentario img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.estrelas {
+    font-size: 18px;
+    color: #FFD700; /* Cor das estrelas */
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049; /* Cor do hover do botão */
+}
+
+.mapa {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+}
+
+
+.menu {
+    background-color: #4CAF50;
+    width: 100%;
+}
+
+.menu.active {
+    display: flex; /* Mostrar menu */
+    flex-direction: column; /* Colocar itens em coluna */
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

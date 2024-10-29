@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Renata Campelo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+
+
+            <h1 class="titulo">Dra <span class="sorriso">Renata Campelo</span></h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+
+
+            </div>
+            <nav id="nav" class="menu">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#comentarios">Comentários</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="sobre">
+
+
+            <h2>Sobre a Dra. Renata Campelo</h2>
+            <img src="./image/renata-imagem2.jpeg" alt="Dra. Renata Campelo" class="foto-dentista">
+            <p>Especialista em estética dental e ortodontia, oferecendo tratamentos de alta qualidade e personalizados
+                para cada paciente. Apaixonada pelo cuidado integral da saúde bucal, ela valoriza a excelência nos
+                tratamentos, proporcionando confiança e satisfação a seus pacientes.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="servicos-container">
+                <div class="card">
+                    <h3>🦷 Clareamento Dental</h3>
+                    <p>Melhore seu sorriso com nosso tratamento de clareamento dental.</p>
+                </div>
+                <div class="card">
+                    <h3>🦷 Dentística</h3>
+                    <p>Trabalhamos com restaurações, pinos e coroas para devolver o sorriso e a confiança de nossos
+                        pacientes.</p>
+                </div>
+                <div class="card">
+                    <h3>🦷 Implantes Dentários</h3>
+                    <p>Recupere seus dentes com nossos implantes de alta qualidade.</p>
+                </div>
+                <div class="card">
+                    <h3>🦷 Limpeza e Profilaxia</h3>
+                    <p>Manter a saúde bucal em dia com nossas limpezas regulares.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="blog-container">
+                <article class="blog-post">
+                    <h3>Dicas para Cuidar dos Dentes</h3>
+                    <p>Aprenda como manter sua saúde bucal em dia com algumas dicas simples.</p>
+                </article>
+                <article class="blog-post">
+                    <h3>Importância do Clareamento Dental</h3>
+                    <p>Descubra os benefícios do clareamento dental e como ele pode melhorar seu sorriso.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="comentarios">
+            <h2>Comentários dos Pacientes</h2>
+            <div id="slider">
+                <div class="comentario">
+                    <img src="./image/paciente2.svg" alt="Paciente 1">
+                    <p>“A melhor dentista que já conheci! Recomendo muito!” - Maria Oliveira</p>
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="comentario">
+                    <img src="./image/paciente1.svg" alt="Paciente 2">
+                    <p>“Atendimento excepcional e resultados incríveis!” - João Pereira</p>
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="comentario">
+                    <img src="./image/paciente3.svg" alt="Paciente 3">
+                    <p>“Muito profissional, paciente e atenciosa!” - Ana Santos</p>
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="comentario">
+                    <img src="./image/paciente4.svg" alt="Paciente 4">
+                    <p>“Belo atendimento e muito feliz com o resultado!” - Antônio José</p>
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="mapa">
+                <h3>Localização</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3523184607975!2d-122.4194156846817!3d37.77492927975944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809cfb2b5e6f%3A0xd4b8fddccade2b12!2sSan%20Francisco%2C%20CA%2094101%2C%20USA!5e0!3m2!1spt-BR!2sbr!4v1630620238655!5m2!1spt-BR!2sbr"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dra Renata Campelo</p>
+    </footer>
+
+    <button id="back-to-top" title="Voltar ao topo">&#8593;</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
