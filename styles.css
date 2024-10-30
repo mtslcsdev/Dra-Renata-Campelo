@@ -378,4 +378,28 @@ footer p a {
     }
 
 }
+
+/* Estilo para desktop (HEADER STICK) */
+@media (min-width: 768px) { 
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+}
+
+/* Estilo para mobile */
+@media (max-width: 767px) { 
+    header {
+        position: relative; 
+        top: auto;
+        z-index: auto;
+    }
+
+    button {
+        display: none;
+    }
+}
+
     
