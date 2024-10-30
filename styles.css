@@ -161,6 +161,11 @@ section {
     border-radius: 0.25rem;
     border: 1px solid #555555;
     background-color: #333333;
+    transition: transform 0.3s;
+}
+
+#depoimentos blockquote:hover {
+    transform: scale(1.05);
 }
 
 #depoimentos blockquote p {
