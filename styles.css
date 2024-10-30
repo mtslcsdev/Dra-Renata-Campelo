@@ -323,6 +323,11 @@ footer p a {
     .redes-sociais {
         justify-content: center;
     }
+
+    button{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 767px) {
