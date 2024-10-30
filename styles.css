@@ -402,7 +402,7 @@ footer p a {
         z-index: auto;
     }
 
-    button {
+    .btn-contato button {
         display: none;
     }
 }
