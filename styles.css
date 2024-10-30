@@ -4,11 +4,12 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 200;
+    color: #ffffff;
+    background-color: #1a1a1a;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #ffffff;
 }
 
 header {
@@ -27,6 +28,7 @@ header {
 }
 
 .titulo {
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
 }
 
@@ -153,26 +155,42 @@ section {
     transform: scale(1.05);
 }
 
-.comentario {
+#depoimentos blockquote {
+    padding: 2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #555555;
+    background-color: #333333;
+}
+
+#depoimentos blockquote p {
+    position: relative;
+    text-indent: 1.875rem;
+    margin-bottom: 1.5rem;
+    color: var(--cor-titulo);
+}
+
+#depoimentos blockquote p span {
+    font: 700 2.5rem serif;
+    position: absolute;
+    top: -0.375rem;
+    left: -1.875rem;
+    color: var(--cor-base);
+}
+
+#depoimentos cite {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-style: italic;
-    text-align: center;
+    align-items: center;
+    font-style: normal;
 }
 
-.comentario img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+#depoimentos cite img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    clip-path: circle();
+    margin-right: 0.5rem;
 }
 
-.estrelas {
-    font-size: 18px;
-    color: #FFD700;
-    margin-bottom: 10px;
-}
 
 form {
     display: flex;
@@ -219,7 +237,7 @@ footer {
 footer p {
     margin-bottom: 16px;
     max-width: 350px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 footer p a {
@@ -242,8 +260,9 @@ footer p a {
 }
 
 #copyright a {
-    color: black;
+    color: rgb(117, 87, 248);
     text-decoration: none;
+    font-weight: bold;
 }
 
 #copyright a:hover {
