@@ -324,7 +324,7 @@ footer p a {
         justify-content: center;
     }
 
-    button{
+    .btn-contato button{
         margin-top: 5px;
         margin-bottom: 10px;
     }
