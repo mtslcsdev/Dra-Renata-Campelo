@@ -15,7 +15,7 @@ body {
 header {
     background-color: #333333;
     color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 0 20px;
     width: 100%;
 }
 
@@ -193,6 +193,7 @@ section {
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 form label {
@@ -230,6 +231,7 @@ footer {
     /* gap: 10px; */
     padding: 22px 80px;
     background-color: #333333;
+    font-size: 20px;
 }
 
 footer p {
@@ -245,7 +247,7 @@ footer p a {
 
 .redes-sociais {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     /* gap: 100px; */
 }
@@ -306,6 +308,7 @@ footer p a {
     }
     
     footer .titulo {
+        /* font-size: 20px; */
         margin-bottom: 20px;
     }
     
@@ -323,7 +326,8 @@ footer p a {
     nav ul {
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        padding: 2px;
+        gap: 10px;
     }
     
     .card {
@@ -332,6 +336,7 @@ footer p a {
 
     /* Ajuste no footer para tela média e pequena */
     footer {
+        font-size: 20px;
         text-align: center;
         padding: 20px;
     }
@@ -358,6 +363,7 @@ footer p a {
 
     /* Ajustes para o footer em telas pequenas */
     footer {
+        font-size: 20px;
         flex-direction: column;
         padding: 20px 15px;
         text-align: center;
