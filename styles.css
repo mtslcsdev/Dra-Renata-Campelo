@@ -56,6 +56,35 @@ nav a:hover {
     color: #ffffff;
 }
 
+/* Estilos para o contêiner dos ícones */
+.btn-contato-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilo base dos ícones */
+.btn-contato-icons a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover para zoom e sombra nos ícones */
+.btn-contato-icons a img:hover {
+    transform: scale(1.1); /* Aumenta 10% */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor do ícone */
+}
+
+/* Estilos adicionais para personalização */
+.whatsapp-icon img:hover {
+    box-shadow: 0px 4px 10px rgba(37, 211, 102, 0.5); /* Cor da sombra no hover do WhatsApp */
+}
+
+.instagram-icon img:hover {
+    box-shadow: 0px 4px 10px rgba(193, 53, 132, 0.5); /* Cor da sombra no hover do Instagram */
+}
+
 header .btn-contato button{
     padding: 10px 15px;
     font-size: 18px;
@@ -206,7 +235,7 @@ footer p a {
 }
 
 #copyright {
-    background-color: #333333;
+    background-color: #1a1a1a;
     color: #FFFFFF;
     padding: 16px;
     text-align: center;
@@ -290,12 +319,7 @@ footer p a {
         padding: 20px;
     }
     
-    .redes-sociais {
-        gap: 10px;
-        justify-content: center;
-    }
 }
-
 @media (max-width: 480px) {
     /* Layout para dispositivos móveis */
     .titulo {
@@ -321,51 +345,6 @@ footer p a {
         padding: 20px 15px;
         text-align: center;
     }
+
+}
     
-    .redes-sociais {
-        flex-direction: row;
-        gap: 8px;
-    }
-}
-
-/* Responsividade para tablets e notebooks */
-@media (max-width: 1024px) {
-    .sobre-mim-conteudo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .foto-icones {
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .foto-dentista {
-        width: 130px;
-        height: 130px;
-        margin: 0;
-    }
-}
-
-/* Responsividade para telas pequenas, como celulares */
-@media (max-width: 600px) {
-    .sobre-mim-conteudo {
-        align-items: center;
-        text-align: center;
-    }
-
-    .foto-icones {
-        flex-direction: column;
-    }
-
-    .foto-dentista {
-        width: 100px;
-        height: 100px;
-    }
-
-    .icones {
-        flex-direction: row;
-        gap: 20px;
-    }
-}
